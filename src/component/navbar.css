@@ -1,0 +1,138 @@
+/* src/components/Navbar.css */
+
+/* Navbar container */
+.navbar {
+    background-color: #00796b; /* Modern teal color for the background */
+    color: white;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  /* Navbar content (title and search) layout */
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Center content */
+  }
+  
+  /* Title styling */
+  .navbar-title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Search bar container */
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    position: relative; /* This allows the icon to be positioned inside the input */
+  }
+  
+  /* Search icon inside the input */
+  .search-icon {
+    position: absolute;
+    left: 10px; /* Position the icon inside the input box */
+    top: 50%;
+    transform: translateY(-50%); /* Center the icon vertically */
+    font-size: 18px;
+    color: #00796b; /* Same color as the search bar border */
+  }
+  
+  /* Input field styling */
+  .navbar-input {
+    padding: 10px 30px; /* Add extra padding on the left for the icon */
+    font-size: 16px;
+    border: 2px solid #00796b;
+    border-radius: 50px;
+    outline: none;
+    width: 250px;
+    transition: all 0.3s ease;
+    padding-left: 35px; /* Make space for the icon */
+  }
+  
+  /* Input field focus style */
+  .navbar-input:focus {
+    border-color: #004d40; /* Darker teal on focus */
+    box-shadow: 0 0 8px rgba(0, 77, 64, 0.5); /* Subtle glow on focus */
+  }
+  
+  /* Search button styling */
+  .search-btn {
+    padding: 12px 20px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover effect for search button */
+  .search-btn:hover {
+    background-color: #004d40;
+    transform: translateY(-2px);
+  }
+  
+  /* Active state for search button */
+  .search-btn:active {
+    background-color: #004d40;
+    transform: translateY(0);
+  }
+  
+  /* Rajagiriya button styling */
+  .rajagiriya-btn {
+    padding: 12px 20px;
+    background-color: #00796b; /* Same color as navbar */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 20px; /* Space between search button and Rajagiriya button */
+  }
+  
+  /* Hover effect for Rajagiriya button */
+  .rajagiriya-btn:hover {
+    background-color: #004d40;
+    transform: translateY(-2px);
+  }
+  
+  /* Active state for Rajagiriya button */
+  .rajagiriya-btn:active {
+    background-color: #004d40;
+    transform: translateY(0);
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .navbar-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .navbar-input {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .search-btn {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  

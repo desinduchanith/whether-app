@@ -1,0 +1,35 @@
+/* src/components/Footer.css */
+
+/* Footer container */
+.footer {
+    background-color: #333; /* Dark background to match the button style */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Footer content */
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Footer text styling */
+  .footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #bbb; /* Lighter text color for readability */
+  }
+  
+  /* Links in the footer */
+  .footer a {
+    color: #4caf50; /* Green color to match navbar */
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline; /* Underline on hover for the link */
+  }
+  
